@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/card_note"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/high"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/priority_icon"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_toRightOf="@id/priority_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:text="title"
+            android:textColor="#353434"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/item_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete" />
+
+        <ImageView
+            android:id="@+id/item_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/item_del"
+            android:src="@drawable/edit" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

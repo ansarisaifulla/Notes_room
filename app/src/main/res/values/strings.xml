@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">android_mvvm</string>
+
+    <string-array name="spinner">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

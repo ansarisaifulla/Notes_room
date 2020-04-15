@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:background="#F42F76"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/back_ic"
+                android:src="@drawable/back"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/back_ic"
+                android:layout_width="wrap_content"
+                android:text="Notes App"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:paddingTop="5dp"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_height="match_parent"
+        android:id="@+id/rcv" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/float_bt"
+        android:layout_margin="20dp"
+        app:elevation="0dp"
+        app:backgroundTint="#EC417E"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

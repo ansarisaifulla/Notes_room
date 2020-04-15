@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Note">
+
+
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"/>
+
+    <EditText
+        android:layout_below="@id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_title"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="description"
+        android:layout_below="@id/et_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/et_decs"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:text="Save"
+        android:padding="12dp"
+        android:id="@+id/bt_save"
+        android:layout_below="@id/et_decs"
+        android:layout_centerInParent="true"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:text="Discard"
+        android:layout_centerInParent="true"
+        android:id="@+id/bt_delete"
+        android:layout_below="@id/bt_save" />
+
+    
+
+</RelativeLayout>
